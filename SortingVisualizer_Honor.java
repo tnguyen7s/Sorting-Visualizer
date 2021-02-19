@@ -6,7 +6,7 @@ Sorting Visualizer:
 + a button to generate a new array of random numbers
 + a text showing the time it takes to run a specific sorting algorithm
 + as two numbers are swapping, their bars are hightlighted 
-+ two bars compared
++ sorted bars are also hightlighted
 */
 package sortingvisualizer_honor;
 
