@@ -2,7 +2,7 @@ package sortingvisualizer_honor;
 
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
-
+// an interface containning values of different colors that are used by the visualization
 public interface ColorSystem {
     public static final Paint TEAGREEN = Color.web("#d0f0c0");
     public static final Paint DARTHMOUNTHGREEN = Color.web("#00693e");

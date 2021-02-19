@@ -37,9 +37,9 @@ public class SortingVisualizer_Honor extends Application {
 
     int size = 10; //the capacity by default
     Rectangle[] bars;//store the references of rectangle bars representing numbers
-    Pane arrayPane;//Pane for the array of bars
+    Pane arrayPane;//Pane that contains rectangle bars
     BorderPane mainPane = new BorderPane();
-    double speed = 10;
+    double speed = 10; //speed of the visualization, can be changed by using slider
     Slider slider = new Slider();
     FxArray fxA;//array object dealing with sorting and visualizing
     Array a;// array object dealing with sorting to get parameters related to the process (running time, numbers of comparisons)

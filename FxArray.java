@@ -10,21 +10,21 @@ import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
 /*
-This class is used to initialize random array, process the sorting, and create a visualization for the sorting
+This class is used to initialize a random array of numbers, process the sorting, and create a visualization for the sorting
  */
 
 public class FxArray {
 
     private double width;
-    private int size;
+    private int size;//capacity of array
     private int[] array;
-    private int[] tmpArray;//array to store the unsorted array in case that the user want to try using different sorting algorithms for the same arrar
+    private int[] tmpArray;//array to store the unsorted array in case that the user want to try using different sorting algorithms for the same array
     private Random random = new Random();
     private SequentialTransition st = new SequentialTransition();
     private double speed;
     private Rectangle[] bars;
 
-    //no args constructor
+    //constructor
     public FxArray(int size, double speed) {
         this.speed = speed;
         this.size = size;
@@ -60,13 +60,12 @@ public class FxArray {
             bars[i] = new Rectangle();
             bars[i].setLayoutX(width * i + i);
             bars[i].setLayoutY(0);
-            bars[i].setHeight(array[i]);
+            bars[i].setHeight(array[i]);//the heights of bars correspond to the value of number
             bars[i].setWidth(width);
             bars[i].setFill(ColorSystem.MALACHITEGREEN);
         }
     }
     //Return bars
-
     public Rectangle[] getBars() {
         return bars;
     }
@@ -359,7 +358,7 @@ public class FxArray {
         bars[i] = bars[j];
         bars[j] = tmpBar;
     }
-
+    // hightlight the bar that is sorted
     private void hightlightSortedBar(int index) {
         FillTransition ft = new FillTransition();
         ft.setShape(bars[index]);

@@ -1,5 +1,5 @@
 package sortingvisualizer_honor;
-/*This class is used to process sorting to get parameters associated to the sorting process*/
+/*This class is used to process sorting to get parameters associated to the sorting process (time and number of comparisons)*/
 public class Array{
     private int [] array;
     private int size;
