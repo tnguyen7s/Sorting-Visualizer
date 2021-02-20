@@ -39,7 +39,7 @@ public class SortingVisualizer_Honor extends Application {
     Rectangle[] bars;//store the references of rectangle bars representing numbers
     Pane arrayPane;//Pane that contains rectangle bars
     BorderPane mainPane = new BorderPane();
-    double speed = 10; //speed of the visualization, can be changed by using slider
+    double speed = 2; //speed of the visualization, can be changed by using slider
     Slider slider = new Slider();
     FxArray fxA;//array object dealing with sorting and visualizing
     Array a;// array object dealing with sorting to get parameters related to the process (running time, numbers of comparisons)
